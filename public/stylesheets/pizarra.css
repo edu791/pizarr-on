@@ -1,0 +1,76 @@
+/*////////////////////////////Pizarra/////////////////////////////////*/
+
+.menu-pizarra{
+	margin-top: 4px;
+}
+
+#logo label{
+	color: #dff0d8;
+	font-family: 'Bowlby One SC';
+	font-size: 30px;
+	text-shadow: 0px 8px 0px rgba(0,0,0,0.3);
+}
+
+#bienvenida_user{
+	color: #555;
+	font-family: 'Ubuntu Condensed';
+	font-size: 20px;*/
+}
+
+
+.boton-column{
+	background-clip: padding-box;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 1em;	
+	border: 10px solid rgba(255,255,255,0.3);
+	height: 85%;
+	margin-left: 1%;
+	margin-top: 4%;
+	position: absolute;
+	width: 18%;
+}
+
+.pizarra{
+	background-color: rgba(255,255,255,0.3)
+	height: 100%;
+	margin-left: 21%;
+	position: absolute;
+	width: 78%;
+}
+
+.chat-column{
+	background-color: rgba(0,0,0,0.5);
+	height: 100%;
+	margin-left: 79%;
+	position: absolute;
+	width: 20%;
+}
+
+#izquierda{
+	float: left;
+	width: 50%;
+}
+#derecha{
+	float: right;
+	width: 50%;
+}
+#accordion{
+	width: 300px;
+}
+.mens{
+	background: #fff;			
+	width: 200px;
+	height: auto;
+	color: black;
+	padding: 6px;
+	font-size: 12px;
+	word-wrap: break-word;
+	background-color: rgba(255,255,255,0.6);
+}
+#canvas{
+	float: right;
+	border: 1px solid white;
+	-moz-box-shadow: 10px 10px 10px #111111;
+	-webkit-box-shadow: 10px 10px 10px #111111;
+	box-shadow: 10px 10px 10px #111111;
+}

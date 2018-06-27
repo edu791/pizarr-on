@@ -1,0 +1,335 @@
+@import url('reset.css');
+
+/*//////////////////////////FUENTES//////////////////////////////////*/
+@font-face {
+  font-family: 'Bowlby One SC';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bowlby One SC Regular'), local('BowlbyOneSC-Regular'), url('fuentes/8ZkeXftTuzKBtmxOYXoReXSZ6Kd_eOJbDsY1hLBynIs.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Ubuntu Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu Condensed'), local('UbuntuCondensed-Regular'), url('fuentes/DBCt-NXN57MTAFjitYxdrFzqCfRpIA3W6ypxnPISCPA.woff') format('woff');
+}
+
+/*Fuentes del menu jquery*/
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-style: normal;
+  font-weight: normal;
+  src: local('PT Sans Narrow'), local('PTSans-Narrow'), url('fuentes/UyYrYy3ltEffJV9QueSi4RdbPw3QSf9R-kE0EsQUn2A.woff') format('woff');
+}
+@font-face {
+  font-family: 'Wire One';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Wire One'), local('WireOne'), url('fuentes/fas9dl2wmMkt5rCu-aBez_esZW2xOQ-xsNqO47m55DA.woff') format('woff');
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+
+body{
+	background-image: url(../img/bg.png);
+	font-family: 'Bowlby One SC';
+}
+
+/*/////////////////////////Index///////////////////////////*/
+
+.header{
+	margin-top: 0%;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+.barra-top{
+	background-color: #333;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+	height: 6%;
+	left: 0%;
+	padding: 1px;
+	position: fixed;
+	top: 0%;
+	width: 100%;
+}
+
+
+.barra-top:after {
+	border-color: #333 transparent transparent transparent;
+	border-style:solid;
+	border-width:20px;
+	bottom:-39px;
+	content:" ";
+	display: block;
+	left: 10px;
+	position:absolute;
+
+}
+
+.redes-sociales{
+	height: auto;
+	position: relative;
+	width: 50%;
+/*	padding-right: 3px;*/
+}
+
+.social1{
+	display: inline-block;
+}
+
+.social2{
+	display: inline-block;
+}
+
+.twitter-icon{
+	background-image: url(../img/Twitter1.png);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	height: 40px;
+	width: 40px;
+}
+
+.twitter-icon:hover{
+	background-image: url(../img/Twitter2.png);
+}
+
+
+.facebook-icon{
+	background-image: url(../img/Facebook1.png);
+	background-repeat: no-repeat;
+	background-size: 80%;
+	height: 40px;
+	width: 40px;
+}
+
+.facebook-icon:hover{
+	background-image: url(../img/Facebook2.png);
+	background-size: 80%;
+}
+
+
+.logo-header{
+	background-image: url(../img/numeros.png);
+	background-size: 90% 100%;
+	border-bottom: -1px solid #292936;	
+	border-bottom: 1px solid #749A02;
+	height: 25%;
+	left: 0%;
+	position: absolute;
+	top: 5%;
+	width: 100%;
+}
+
+.logo-header label{
+	font-size: 80px;
+	color: #dff0d8;
+	text-shadow: 0px 8px 0px rgba(0,0,0,0.3);
+}
+
+.contenido{
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	top: 30%;
+	left: 0%;	
+}
+
+
+ul{
+	list-style-type: none;	
+}
+
+
+.menu-index{
+	height: 90%;
+	left: 30%;
+	position: absolute;
+	top: 4%;
+	width: 50%;
+}
+
+a{
+	text-decoration: none;
+}
+
+.img-bienvenido{
+	position: relative;
+}
+
+.img-bienvenido img{
+	width: 311px;
+	height: 274px;
+}
+
+.box-bienvenido{
+	position: relative;
+	width: 20%;
+	height: 10%;
+	font-family: 'Ubuntu Condensed';
+	background-color: #32470C;
+	padding: 3px;
+	left: 1%;
+	border: 1px solid #2A3C0A;
+	color: #BAFF8E;
+	border-radius: 3px;
+	top: 5px;
+}
+
+.box-bienvenido p::after {
+	bottom: -7px;
+	content: '';
+	background: #32470C;
+	border: 1px solid rgba(0, 0, 0, .1);
+	border-right: 0;
+	border-top: 0;
+	display: block;
+	height: 10px;
+	left: 35px;
+	position: absolute;
+	width: 10px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+/*//////////////////Menu index antiguo///////////////////////////*/
+
+/*.btn_menu{
+	-moz-transition: background-color 3s,width 1s;
+	-o-transition: background-color 3s,width 1s;
+	-webkit-transition: background-color 3s,width 1s;
+	border-radius: 2em;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+	height: 10%;
+	margin-bottom: 1%;
+	margin-left: 0%;
+	padding: 10px;
+	width: 50%;
+}
+
+.btn_menu:hover{
+	background-color: rgba(0,46,0,0.4);
+	width: 90%;
+}
+
+.btn_menu a:link{
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 0px 3px 0px rgba(0,0,0,0.3);
+}*/
+
+/*/////////////////////////////Footer/////////////////////////////////*/
+
+footer{
+	background-color: #333;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.6);
+	height: 4.25%;
+	left: 0%;
+	padding: 1px;
+	position: fixed;
+	top: 96%;
+	width: 100%;
+}
+
+
+.lbl_footer1{
+	color: #999;
+	font-family: 'Ubuntu Condensed';
+	font-size: 12px;
+}
+
+.error{
+	color: red;
+}
+
+/*////////////////////////////Botones/////////////////////////////////*/
+
+.btn1{
+	-moz-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	background-color: #51a351;
+	border-radius: 2px;
+	border: 1px solid transparent;
+	border: none;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 5px;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	text-transform: uppercase;
+}
+
+.btn1:hover{
+	background-color: #80B813;
+}
+
+/*//////////////////////////////TextArea/////////////////////////////*/
+
+.txt-area1{
+	-moz-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	border-radius: 4px; 
+	border: 1px solid #80B813; 
+	margin-left: 10%;
+	margin-right: 10%;	
+}
+
+.txt-area1:focus{
+	border: 1px solid #51a351;
+}
+
+.fancy-p{
+	margin: 4px;
+}
+
+.txt-fancy1{
+	border-bottom: 1px solid #749A02;
+	color: green; 
+	font-size: 40px; 
+	font-weight: bold; 
+    border-bottom: -1px solid #292936;
+}
+
+/*////////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width:480px){
+
+	.menu-index{
+		left: 0%;
+		position: relative;
+		top: 4%;
+	}
+
+	.logo-header label{
+		font-size: 35px;
+	}
+
+	.logo-header img{
+		max-width: 50px;
+		max-height: 60px;
+	}
+
+	.img-bienvenido img{
+		width: 111px;
+		height: 84px;
+		top: 4px;
+	}
+
+	.box-bienvenido{
+		width: 260px;
+		height: 80px;
+		font-size: 14px;
+
+	}
+
+	footer{
+		position: fixed;
+	}
+
+
+
+}

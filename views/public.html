@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pizarr-ON v1.0b</title>
+		<meta charset="utf-8"/>
+		<link rel="shortcut icon" href="img/pizaicon2.ico">
+		<link rel="stylesheet" href="stylesheets/style.css"/>
+		<link rel="stylesheet" href="stylesheets/vader/jquery-ui-1.8.20.custom.css"/>
+		<link rel="stylesheet" href="javascripts/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="stylesheets/herramientas.css"/>
+		<link rel="stylesheet" href="stylesheets/pizarra.css"/>
+		<script type="text/javascript" src="javascripts/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery-ui-1.8.20.custom.min.js"></script>		
+		<script type="text/javascript" src="javascripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+		<script type="text/javascript" src="javascripts/fancybox/jquery.easing-1.3.pack.js"></script>
+		<!-- <script src="http://localhost:3000/socket.io/socket.io.js"></script> -->
+		<script src="http://pizarr-on.herokuapp.com/socket.io/socket.io.js"></script> <!-- producción -->
+		<script type="text/javascript" src="javascripts/pizarra_publica.js"></script>
+	</head>
+
+	<body>		
+		<div id="contenedor">
+			<div id="izquierda">
+				<div id="logo"><label>pizarr-ON!</label></div>			
+				<div id="bienvenida_user">
+					<p>Hola <span id="user_saludo"></span></p>
+				</div>
+				<div id="herramientas">			
+				    <div id="accordion">
+					    <h3><a href="#">Colores</a></h3>
+					    <div>
+					    	<div id="colores">
+					    		<div class="div_color" style="background:#FFFFFF;"></div>
+					    		<div class="div_color" style="background:#7F7F7F;"></div>
+					    		<div class="div_color" style="background:#FF0000;"></div>
+					    		<div class="div_color" style="background:#A020F0;"></div>
+					    		<div class="div_color" style="background:#0000FF;"></div>
+					    		<div class="div_color" style="background:#ADD8E6;"></div>
+					    		<div class="div_color" style="background:#00FF00;"></div>
+					    		<div class="div_color" style="background:#FFFF00;"></div>
+					    		<div class="div_color" style="background:#FFA500;"></div>
+					    		<div class="div_color" style="background:#A52A2A;"></div>
+					    		<div class="div_color" style="background:#8B6914;"></div>
+					    		<div class="div_color" style="background:#1E90FF;"></div>
+					    		<div class="div_color" style="background:#FFC0CB;"></div>
+					    		<div class="div_color" style="background:#90EE90;"></div>
+					    	</div>
+					    	<div>
+					    		<a href="#" id="btn_limpiar">Limpiar pizarrón <img src="img/limpiar.png" width="30px" height="30px"></a>
+					    	</div>
+					    	<div>
+					    		<label for="range">Ancho del lápiz: </label><input type="range" value="2" min="0" max="5" id="ancho">
+					    	</div>
+					    </div>
+					    <h3><a href="#">Imagen</a></h3>
+					    <div id="imagen">
+					    	<div class="box-img">
+						    	<form>
+				 				    		<label>Seleccione imagen:</label>
+									<div class="upload">
+										<label>Buscar...</label>
+									      <input type="file" />
+				      						</div>
+									<input type="submit" value="Subir" class="enviar"/>
+						    	</form>
+						    </div>	
+					    </div>
+					    <h3><a href="#">Calculadora</a></h3>
+					    <div>Soon... </div>
+					    <h3><a href="#">Chat</a></h3>
+					    <div class="box-chat">
+				    		<div id="mensajes">
+							</div>
+							<textarea id="texto" class="text-chat" placeholder="Escriba un mensaje aqui..."></textarea>
+							<input type="button" value="enviar" id="boton_enviar" class="btn1">
+							<div><a href="#" id="elegir_usuario">Elegir nombre de usuario</a></div>		    
+					    </div>				    
+					</div>				
+				</div>
+			</div>
+			<div id="derecha">
+				<div id="pizarron">
+				    <canvas id="canvas" width="900px" height="600px">
+						El navegador no soporta HTML5
+					</canvas>
+			    </div>
+			</div>
+		</div>
+	</body>
+</html>

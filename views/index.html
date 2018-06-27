@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="/images/pizaicon2.ico">
+	<title>Pizarr-ON v1.0b</title>
+	<!--Index Style-->
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+	<!--Menu Style-->
+	<link rel="stylesheet" type="text/css" href="/stylesheets/stimenu.css" />
+	<!--Fancybox-->
+	<link rel="stylesheet" href="/javascripts/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
+	<!--jQuery-->	
+	<script type="text/javascript" src="/javascripts/jquery-1.7.2.min.js"></script>
+	<!--Fancybox-->		
+	<script type="text/javascript" src="/javascripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="/javascripts/fancybox/jquery.easing-1.3.pack.js"></script>
+	<!--jQuery UI-->
+	<script type="text/javascript" src="/javascripts/jquery-ui-1.8.14.custom.min.js"></script>
+	<script type="text/javascript" src="/javascripts/jquery.iconmenu.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		
+			$('#sti-menu').iconmenu({
+				animMouseenter	: {
+					'mText' : {speed : 200, easing : 'easeOutExpo', delay : 0, dir : 1},
+					'sText' : {speed : 600, easing : 'easeOutExpo', delay : 400, dir : 1},
+					'icon'  : {speed : 200, easing : 'easeOutExpo', delay : 0, dir : 1}
+				},
+				animMouseleave	: {
+					'mText' : {speed : 200, easing : 'easeInExpo', delay : 150, dir : 1},
+					'sText' : {speed : 200, easing : 'easeInExpo', delay : 0, dir : 1},
+					'icon'  : {speed : 200, easing : 'easeInExpo', delay : 300, dir : 1}
+				}
+				
+			});
+
+			$('.miniventana').fancybox();
+
+		});
+	</script>
+</head>
+<body>
+	<div class="principal" align="center">
+		<div class="header">
+		<!--Barra de redes sociales-->
+		<div class="barra-top" align="right">
+			<div class="redes-sociales">
+				<div class="social1">
+					<div class="twitter-icon" onclick="location.href='http://www.twitter.com';" ></div>
+				</div>
+				<div class="social2">
+					<div class="facebook-icon" onclick="location.href='http://www.facebook.com';"></div>
+				</div>
+			</div>
+		<!--Barra de redes sociales-->			
+		</div>
+		<div class="logo-header">
+			<label>pizarr-ON!</label>
+			<img src="img/logoimg.png" style="width: 90px; height: 90px;">
+		</div>
+		</div>
+		<div class="contenido">
+			<div class="bienvenido" align="left">
+				<div class="box-bienvenido">
+					<p>
+						Bienvenido a pizarrON!, aqui podras enseñar y aprender matematicas junto a tus amigos.<br> ¡Te invitamos a ingresar a nuestras salas!
+					</p>	
+				</div>
+				<div class="img-bienvenido">
+					<img src="img/bienvenido.png">
+				</div>
+
+			</div>
+			<!-- Menu -->
+			<div class="menu-index">
+			<ul id="sti-menu" class="sti-menu">
+				<li data-hovercolor="#ffdd3f">
+					<a href="/public">
+						<h2 data-type="mText" class="sti-item">Sala pública</h2>
+						<h3 data-type="sText" class="sti-item">Ingresa aquí a la sala pública</h3>
+						<span data-type="icon" class="sti-icon sti-icon-salapublica sti-item"></span>
+					</a>					
+				</li>
+				<li data-hovercolor="#37c5e9">
+					<a href="/crear_sala_form" class="miniventana">
+						<h2 data-type="mText" class="sti-item">Crear Sala</h2>
+						<h3 data-type="sText" class="sti-item">Crea tu propia sala e invita a tus compañeros</h3>
+						<span data-type="icon" class="sti-icon sti-icon-crearsala sti-item"></span>
+					</a>
+				</li>
+				<li data-hovercolor="#57e676">
+					<a href="/login_sala_form" class="miniventana">
+						<h2 data-type="mText" class="sti-item">Ingresar a sala</h2>
+						<h3 data-type="sText" class="sti-item">¿Te invitaron a una sala? Ingresa aquí!</h3>
+						<span data-type="icon" class="sti-icon sti-icon-salaprivada sti-item"></span>
+					</a>
+				</li>
+			</ul>
+			<!-- Menu -->		
+			</div>	
+		</div>
+		<footer>
+			<label class="lbl_footer1">Competencia desarrollo de software INACAP 2012</label>
+		</footer>	
+	</div>
+</body>
+</html>
